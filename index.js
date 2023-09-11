@@ -51,6 +51,6 @@ function sound(key) {
             break;
         default:
             break;
-    }
-}
+    };
+};
 
