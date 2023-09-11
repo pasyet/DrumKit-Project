@@ -5,7 +5,7 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
         sound(buttonStyle);
         animation(buttonStyle);
     });
-}
+};
 document.addEventListener("keypress", function (event) {
     sound(event.key);
     animation(event.key);
@@ -15,9 +15,9 @@ function animation(currentKey) {
     var activeButton = document.querySelector(`. ${currentKey}`);
     activeButton.classList.add("pressed");
     setTimeout(() => {
-        activeButton.classList.remove("pressed")
+        activeButton.classList.remove("pressed");
     }, 100);
-}
+};
 
 function sound(key) {
     switch (key) {
